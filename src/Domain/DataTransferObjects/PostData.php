@@ -6,6 +6,7 @@ namespace Lines\News\Domain\DataTransferObjects;
 
 use Carbon\CarbonImmutable;
 use Lines\News\Domain\Enums\PostStatus;
+use Lines\Support\Domain\DataTransferObjects\DataTransferObject;
 
 final readonly class PostData extends DataTransferObject
 {
