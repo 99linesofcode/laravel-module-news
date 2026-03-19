@@ -1,9 +1,9 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "99linesofcode/laravel-package-skeleton",
-    "description": "Laravel Package Development Skeleton Project",
+    "name": "99linesofcode/laravel-module-news",
+    "description": "News module for Laravel and Filament PHP",
     "keywords": [],
-    "homepage": "https://github.com/99linesofcode/laravel-package-skeleton",
+    "homepage": "https://github.com/99linesofcode/laravel-module-news",
     "license": "MIT",
     "authors": [
         {
@@ -11,8 +11,26 @@
             "email": "3071062+99linesofcode@users.noreply.github.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../laravel-module-support",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "../laravel-module-user",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
     "require": {
         "php": "^8.2",
+        "99linesofcode/laravel-module-support": "@dev",
+        "99linesofcode/laravel-module-user": "@dev",
         "filament/filament": "^5.0",
         "illuminate/contracts": "^12.0",
         "livewire/livewire": "^4.2"
@@ -38,7 +56,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Lines\\Skeleton\\": "src/"
+            "Lines\\News\\": "src/"
         },
         "classmap": [
             "database/factories",
@@ -47,13 +65,16 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Lines\\Skeleton\\Tests\\": "tests/",
+            "Lines\\News\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/",
             "Workbench\\Database\\Factories\\": "workbench/database/factories/",
             "Workbench\\Database\\Seeders\\": "workbench/database/seeders/"
         }
     },
     "scripts": {
+        "post-update-cmd": [
+            "@ide-helper"
+        ],
         "post-autoload-dump": [
             "@clear",
             "@prepare",
@@ -78,7 +99,7 @@
         ],
         "prepare": [
             "@php vendor/bin/testbench package:discover --ansi",
-            "@php vendor/bin/testbench package:create-sqlite-db --ansi",
+            "@php vendor/bin/testbench workbench:create-sqlite-db --ansi",
             "@php vendor/bin/testbench migrate:fresh --ansi"
         ],
         "refactor": "@php vendor/bin/rector --memory-limit=2G --ansi",
@@ -93,7 +114,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Lines\\Skeleton\\SkeletonServiceProvider"
+                "Lines\\News\\NewsServiceProvider"
             ],
             "aliases": [],
             "dont-discover": []

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Lines\Skeleton\Tests;
+namespace Lines\News\Tests;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Orchestra\Testbench\Concerns\WithWorkbench;

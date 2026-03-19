@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Lines\Skeleton;
+namespace Lines\News;
 
 use Filament\Support\Facades\FilamentAsset;
 use Filament\Support\Facades\FilamentIcon;
@@ -12,11 +12,11 @@ use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class NewsServiceProvider extends PackageServiceProvider
 {
-    public static string $name = 'skeleton';
+    public static string $name = 'news';
 
-    public static string $viewNamespace = 'skeleton';
+    public static string $viewNamespace = 'news';
 
     public function configurePackage(Package $package): void
     {
@@ -33,14 +33,16 @@ class SkeletonServiceProvider extends PackageServiceProvider
             ->hasTranslations()
             ->hasAssets()
             ->hasRoute('web')
-            ->hasMigrations();
+            ->hasMigrations([
+                'create_posts_table',
+            ]);
     }
 
     public function packageBooted(): void
     {
         Livewire::addNamespace(
-            namespace: 'skeleton',
-            classNamespace: 'Lines\\Skeleton\\App\\Livewire',
+            namespace: 'news',
+            classNamespace: 'Lines\\News\\App\\Livewire',
             classPath: __DIR__.'/App/Livewire',
             classViewPath: __DIR__.'/../resources/views',
         );
@@ -61,15 +63,15 @@ class SkeletonServiceProvider extends PackageServiceProvider
         if (app()->runningInConsole()) {
             foreach (app(Filesystem::class)->files(__DIR__.'/../stubs/') as $file) {
                 $this->publishes([
-                    $file->getRealPath() => base_path("stubs/skeleton/{$file->getFilename()}"),
-                ], 'skeleton-stubs');
+                    $file->getRealPath() => base_path("stubs/news/{$file->getFilename()}"),
+                ], 'news-stubs');
             }
         }
     }
 
     protected function getAssetPackageName(): ?string
     {
-        return 'lines/skeleton';
+        return 'lines/news';
     }
 
     /**
@@ -78,9 +80,9 @@ class SkeletonServiceProvider extends PackageServiceProvider
     protected function getAssets(): array
     {
         return [
-            // AlpineComponent::make('skeleton', __DIR__ . '/../resources/dist/components/skeleton.js'),
-            // Css::make('skeleton-styles', __DIR__ . '/../resources/dist/skeleton.css'),
-            // Js::make('skeleton-scripts', __DIR__ . '/../resources/dist/skeleton.js'),
+            // AlpineComponent::make('news', __DIR__ . '/../resources/dist/components/news.js'),
+            // Css::make('news-styles', __DIR__ . '/../resources/dist/news.css'),
+            // Js::make('news-scripts', __DIR__ . '/../resources/dist/news.js'),
         ];
     }
 

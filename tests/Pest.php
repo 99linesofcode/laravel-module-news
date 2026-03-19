@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Lines\Skeleton\Tests\TestCase;
+use Lines\News\Tests\TestCase;
 
 /*
 |--------------------------------------------------------------------------
