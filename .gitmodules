@@ -1,0 +1,3 @@
+[submodule "devshell"]
+	path = devshell
+	url = git@github.com:99linesofcode/devshell-php.git
