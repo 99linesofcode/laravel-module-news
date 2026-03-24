@@ -1,4 +1,4 @@
-# Laravel package skeleton
+# laravel-package-skeleton
 
 Domain Driven Laravel Package Development skeleton project for modular Laravel application development.
 
