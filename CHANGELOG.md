@@ -1,4 +1,14 @@
-# 0.1.0 (2026-03-25)
+## [0.1.1](https://github.com/99linesofcode/laravel-module-news/compare/v0.1.0...v0.1.1) (2026-03-25)
+
+
+### Bug Fixes
+
+* **dependabot:** time should be of type string instead of int ([9da0c60](https://github.com/99linesofcode/laravel-module-news/commit/9da0c60bfa9fcadc443eb3f0885dc5f10b97b223))
+* **deps:** bump devshell from `0195dc0` to `e949d95` ([44c4bd5](https://github.com/99linesofcode/laravel-module-news/commit/44c4bd59f1a9fcace2a486621183415f5a51e0a8))
+
+
+
+# [0.1.0](https://github.com/99linesofcode/laravel-module-news/compare/1715012618ca053825e5875074974c1ecd7c807e...v0.1.0) (2026-03-25)
 
 
 ### Bug Fixes
