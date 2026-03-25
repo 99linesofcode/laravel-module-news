@@ -3,7 +3,7 @@
 
 ### Bug Fixes
 
-* **dependabot:** time should be of type string instead of int ([9da0c60](https://github.com/99linesofcode/laravel-module-news/commit/9da0c60bfa9fcadc443eb3f0885dc5f10b97b223))
+* **dependabot:** time should be of type string instead of int ([67a12de](https://github.com/99linesofcode/laravel-module-news/commit/67a12de64acf182cbcd4c7a30fa0a1a9f698ef17))
 * **livewire:** loading layouts, pages and components from workbench path ([4737dd0](https://github.com/99linesofcode/laravel-module-news/commit/4737dd0d78fdfe2f01b778ddff3b478f07dade43))
 * **ripgrep:** prevent searching flake.lock ([c71bb6c](https://github.com/99linesofcode/laravel-module-news/commit/c71bb6cf7678e568bb8e4701c96d634ccc1c2e68))
 
