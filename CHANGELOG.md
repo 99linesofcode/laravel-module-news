@@ -1,3 +1,12 @@
+## [0.1.3](https://github.com/99linesofcode/laravel-module-news/compare/v0.1.2...v0.1.3) (2026-03-26)
+
+
+### Bug Fixes
+
+* **deps:** bump devshell from `e949d95` to `7b1fc23` ([16078b4](https://github.com/99linesofcode/laravel-module-news/commit/16078b4987494e3c078d44d9979c1e27c7d32cc6))
+
+
+
 ## [0.1.2](https://github.com/99linesofcode/laravel-module-news/compare/v0.1.1...v0.1.2) (2026-03-26)
 
 
