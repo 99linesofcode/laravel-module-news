@@ -2,6 +2,9 @@
 .env.backup
 .env.production
 
+# devshell
+/.direnv
+
 # frontend
 auth.json
 /node_modules
@@ -34,10 +37,6 @@ _ide_helper_models.php
 
 # Pest
 /tests/Browser/Screenshots
-
-# direnv
-/.direnv
-.envrc
 
 phpstan.neon
 phpunit.xml
