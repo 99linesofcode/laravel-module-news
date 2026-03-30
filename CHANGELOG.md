@@ -1,3 +1,12 @@
+## [0.1.4](https://github.com/99linesofcode/laravel-module-news/compare/v0.1.3...v0.1.4) (2026-03-30)
+
+
+### Bug Fixes
+
+* **deps:** bump brace-expansion ([#10](https://github.com/99linesofcode/laravel-module-news/issues/10)) ([0470746](https://github.com/99linesofcode/laravel-module-news/commit/047074622c420bbffbbf2e45f6d35d8251fe59c8))
+
+
+
 ## [0.1.3](https://github.com/99linesofcode/laravel-module-news/compare/v0.1.2...v0.1.3) (2026-03-26)
 
 
