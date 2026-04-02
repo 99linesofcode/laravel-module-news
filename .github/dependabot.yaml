@@ -1,5 +1,4 @@
 version: 2
-
 updates:
   - package-ecosystem: gitsubmodule
     directory: /
@@ -12,7 +11,8 @@ updates:
       prefix: fix
       prefix-development: chore
       include: scope
-
+    cooldown:
+      default-days: 7
   - package-ecosystem: npm
     directory: /
     schedule:
@@ -24,7 +24,8 @@ updates:
       prefix: fix
       prefix-development: chore
       include: scope
-
+    cooldown:
+      default-days: 7
   - package-ecosystem: composer
     directory: /
     schedule:
@@ -36,3 +37,5 @@ updates:
       prefix: fix
       prefix-development: chore
       include: scope
+    cooldown:
+      default-days: 7
