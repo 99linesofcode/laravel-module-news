@@ -25,6 +25,14 @@ updates:
       include: scope
     cooldown:
       default-days: 7
+    groups:
+      automated:
+        update-types:
+          - 'patch'
+          - 'minor'
+      manual:
+        update-types:
+          - 'major'
 
   - package-ecosystem: composer
     directory: /
@@ -39,3 +47,11 @@ updates:
       include: scope
     cooldown:
       default-days: 7
+    groups:
+      automated:
+        update-types:
+          - 'patch'
+          - 'minor'
+      manual:
+        update-types:
+          - 'major'
