@@ -15,14 +15,14 @@ importers:
         specifier: ^4.2.4
         version: 4.2.4(vite@8.0.10(@types/node@25.6.2)(esbuild@0.27.4)(jiti@2.6.1))
       axios:
-        specifier: ^1.15.2
-        version: 1.15.2
+        specifier: ^1.16.0
+        version: 1.16.0
       concurrently:
         specifier: ^9.2.1
         version: 9.2.1
       intelephense:
-        specifier: ^1.18.1
-        version: 1.18.1
+        specifier: ^1.18.2
+        version: 1.18.2
       laravel-vite-plugin:
         specifier: ^3.1.0
         version: 3.1.0(vite@8.0.10(@types/node@25.6.2)(esbuild@0.27.4)(jiti@2.6.1))
@@ -642,8 +642,8 @@ packages:
   asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
 
-  axios@1.15.2:
-    resolution: {integrity: sha512-wLrXxPtcrPTsNlJmKjkPnNPK2Ihe0hn0wGSaTEiHRPxwjvJwT3hKmXF4dpqxmPO9SoNb2FsYXj/xEo0gHN+D5A==}
+  axios@1.16.0:
+    resolution: {integrity: sha512-6hp5CwvTPlN2A31g5dxnwAX0orzM7pmCRDLnZSX772mv8WDqICwFjowHuPs04Mc8deIld1+ejhtaMn5vp6b+1w==}
 
   basic-ftp@5.3.1:
     resolution: {integrity: sha512-bopVNp6ugyA150DDuZfPFdt1KZ5a94ZDiwX4hMgZDzF+GttD80lEy8kj98kbyhLXnPvhtIo93mdnLIjpCAeeOw==}
@@ -916,8 +916,8 @@ packages:
   import-in-the-middle@2.0.6:
     resolution: {integrity: sha512-3vZV3jX0XRFW3EJDTwzWoZa+RH1b8eTTx6YOCjglrLyPuepwoBti1k3L2dKwdCUrnVEfc5CuRuGstaC/uQJJaw==}
 
-  intelephense@1.18.1:
-    resolution: {integrity: sha512-7TxZlpb1Dzo2DEBV04ef+n26bUE/StcQdP6yAPdNzoxXktvgbEFsHEIy8G8kv52rdWjdTU77ZMGxpIxzJpPzUg==}
+  intelephense@1.18.2:
+    resolution: {integrity: sha512-CK6KHeUDFFDpdwIvpQfNAnQkpQioYjJj/FmD5ZVtrQZ/P3P8qupIFxA/oHiuDeQYJtkzYCyADCnDSfFro+5uFQ==}
     hasBin: true
 
   ip-address@10.2.0:
@@ -1260,8 +1260,8 @@ packages:
     resolution: {integrity: sha512-HehCEsotFqbPW9sJ8WVYB6UbmIMv7kUUORIF2Nncq4VQvBfNBLibW9YZR5dlYCSUhwcD628pRllm7n+E+YTzJw==}
     engines: {node: '>= 14'}
 
-  socks@2.8.8:
-    resolution: {integrity: sha512-NlGELfPrgX2f1TAAcz0WawlLn+0r3FyhhCRpFFK2CemXenPYvzMWWZINv3eDNo9ucdwme7oCHRY0Jnbs4aIkog==}
+  socks@2.8.9:
+    resolution: {integrity: sha512-LJhUYUvItdQ0LkJTmPeaEObWXAqFyfmP85x0tch/ez9cahmhlBBLbIqDFnvBnUJGagb0JbIQrkBs1wJ+yRYpEw==}
     engines: {node: '>= 10.0.0', npm: '>= 3.0.0'}
 
   source-map-js@1.2.1:
@@ -1913,7 +1913,7 @@ snapshots:
 
   asynckit@0.4.0: {}
 
-  axios@1.15.2:
+  axios@1.16.0:
     dependencies:
       follow-redirects: 1.16.0
       form-data: 4.0.5
@@ -2229,7 +2229,7 @@ snapshots:
       cjs-module-lexer: 2.2.0
       module-details-from-path: 1.0.4
 
-  intelephense@1.18.1:
+  intelephense@1.18.2:
     dependencies:
       '@bmewburn/js-beautify': 1.15.4
       '@bmewburn/vscode-html-languageserver': 1.11.1
@@ -2514,11 +2514,11 @@ snapshots:
     dependencies:
       agent-base: 7.1.4
       debug: 4.4.3
-      socks: 2.8.8
+      socks: 2.8.9
     transitivePeerDependencies:
       - supports-color
 
-  socks@2.8.8:
+  socks@2.8.9:
     dependencies:
       ip-address: 10.2.0
       smart-buffer: 4.2.0
