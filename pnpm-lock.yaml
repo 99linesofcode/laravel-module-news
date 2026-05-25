@@ -4,10 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-overrides:
-  protobufjs@>=8.0.0 <8.2.0: '>=8.2.0'
-  protobufjs@>=8.0.0 <=8.0.1: '>=8.0.2'
-
 importers:
 
   .:
@@ -25,8 +21,8 @@ importers:
         specifier: ^9.2.1
         version: 9.2.1
       intelephense:
-        specifier: ^1.18.2
-        version: 1.18.2
+        specifier: ^1.18.3
+        version: 1.18.3
       laravel-vite-plugin:
         specifier: ^3.1.0
         version: 3.1.0(vite@8.0.13(@types/node@25.9.1)(esbuild@0.27.4)(jiti@2.7.0))
@@ -351,8 +347,8 @@ packages:
     resolution: {integrity: sha512-lp4qAiMTD4sNWW4DbKLBkfiMZ4jbAboJIGOQr5DvciMRI494OapieI9qiODpOt0XBr1LjIDy1xAGAnVs5supTA==}
     engines: {node: '>=14'}
 
-  '@opentelemetry/semantic-conventions@1.40.0':
-    resolution: {integrity: sha512-cifvXDhcqMwwTlTK04GBNeIe7yyo28Mfby85QXFe1Yk8nmi36Ab/5UQwptOx84SsoGNRg+EVSjwzfSZMy6pmlw==}
+  '@opentelemetry/semantic-conventions@1.41.1':
+    resolution: {integrity: sha512-/UhIkaZgPutTFmQ7RnIJGgDXZmtEJ7Dvi86xNTFWcnRxVRNk/aotsqDJYeEvDP+FSMB2SdW+pQzNMcWP0rwuNA==}
     engines: {node: '>=14'}
 
   '@oxc-project/types@0.130.0':
@@ -898,8 +894,8 @@ packages:
   import-in-the-middle@2.0.6:
     resolution: {integrity: sha512-3vZV3jX0XRFW3EJDTwzWoZa+RH1b8eTTx6YOCjglrLyPuepwoBti1k3L2dKwdCUrnVEfc5CuRuGstaC/uQJJaw==}
 
-  intelephense@1.18.2:
-    resolution: {integrity: sha512-CK6KHeUDFFDpdwIvpQfNAnQkpQioYjJj/FmD5ZVtrQZ/P3P8qupIFxA/oHiuDeQYJtkzYCyADCnDSfFro+5uFQ==}
+  intelephense@1.18.3:
+    resolution: {integrity: sha512-8mQuJH9k0jKQYsq99gKGrEEJvdXWBMe3f/WDB5XAQNbpzVWDsS/EopoHPb6N0jtZxGRhY7+mh9C/kZVCkwu+pg==}
     hasBin: true
 
   ip-address@10.2.0:
@@ -1174,8 +1170,8 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
 
-  protobufjs@8.4.0:
-    resolution: {integrity: sha512-iriNhQ57SYA5Jbdi+41AyPdx6jPPkFO7DODzkOBmqFhgYn/JzX2HxgxYPY18eQAs3CP/AWqtPvkWn8rclRAxdQ==}
+  protobufjs@8.3.0:
+    resolution: {integrity: sha512-JpJpFaR7yKNb6WqKvJJ1MLbiuIQWQnbUUb06nDtf2/i8YWYYLEfP6xf9BwSJoJQg1wAy61EQB8dssQg64oX4aA==}
     engines: {node: '>=12.0.0'}
 
   proxy-agent@6.5.0:
@@ -1624,7 +1620,7 @@ snapshots:
   '@opentelemetry/core@2.7.1(@opentelemetry/api@1.9.1)':
     dependencies:
       '@opentelemetry/api': 1.9.1
-      '@opentelemetry/semantic-conventions': 1.40.0
+      '@opentelemetry/semantic-conventions': 1.41.1
 
   '@opentelemetry/instrumentation@0.211.0(@opentelemetry/api@1.9.1)':
     dependencies:
@@ -1645,7 +1641,7 @@ snapshots:
     dependencies:
       '@opentelemetry/api': 1.9.1
       '@opentelemetry/core': 2.7.1(@opentelemetry/api@1.9.1)
-      '@opentelemetry/semantic-conventions': 1.40.0
+      '@opentelemetry/semantic-conventions': 1.41.1
 
   '@opentelemetry/sdk-trace-base@1.30.1(@opentelemetry/api@1.9.1)':
     dependencies:
@@ -1659,7 +1655,7 @@ snapshots:
       '@opentelemetry/api': 1.9.1
       '@opentelemetry/core': 2.7.1(@opentelemetry/api@1.9.1)
       '@opentelemetry/resources': 2.7.1(@opentelemetry/api@1.9.1)
-      '@opentelemetry/semantic-conventions': 1.40.0
+      '@opentelemetry/semantic-conventions': 1.41.1
 
   '@opentelemetry/sdk-trace-web@2.7.1(@opentelemetry/api@1.9.1)':
     dependencies:
@@ -1669,7 +1665,7 @@ snapshots:
 
   '@opentelemetry/semantic-conventions@1.28.0': {}
 
-  '@opentelemetry/semantic-conventions@1.40.0': {}
+  '@opentelemetry/semantic-conventions@1.41.1': {}
 
   '@oxc-project/types@0.130.0': {}
 
@@ -1856,7 +1852,7 @@ snapshots:
       '@opentelemetry/api': 1.9.1
       '@opentelemetry/core': 1.30.1(@opentelemetry/api@1.9.1)
       '@opentelemetry/sdk-trace-base': 1.30.1(@opentelemetry/api@1.9.1)
-      '@opentelemetry/semantic-conventions': 1.40.0
+      '@opentelemetry/semantic-conventions': 1.41.1
       cls-hooked: 4.2.2
       continuation-local-storage: 3.2.1
       diagnostic-channel: 1.1.1
@@ -2204,7 +2200,7 @@ snapshots:
       cjs-module-lexer: 2.2.0
       module-details-from-path: 1.0.4
 
-  intelephense@1.18.2:
+  intelephense@1.18.3:
     dependencies:
       '@bmewburn/js-beautify': 1.15.4
       '@bmewburn/vscode-html-languageserver': 1.11.1
@@ -2214,7 +2210,7 @@ snapshots:
       html-to-text: 9.0.5
       lru-cache: 11.3.5
       micromatch: 4.0.8
-      protobufjs: 8.4.0
+      protobufjs: 8.3.0
       proxy-agent: 6.5.0
       semver: 7.7.4
       turndown: 7.2.4
@@ -2397,7 +2393,7 @@ snapshots:
 
   prettier@3.8.3: {}
 
-  protobufjs@8.4.0:
+  protobufjs@8.3.0:
     dependencies:
       long: 5.3.2
 
