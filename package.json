@@ -10,7 +10,7 @@
         "@playwright/test": "^1.60.0",
         "@tailwindcss/vite": "^4.3.0",
         "axios": "^1.16.1",
-        "concurrently": "^9.2.1",
+        "concurrently": "^10.0.0",
         "intelephense": "^1.18.4",
         "laravel-vite-plugin": "^3.1.0",
         "playwright": "1.60.0",
