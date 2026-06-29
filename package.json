@@ -11,7 +11,7 @@
         "@tailwindcss/vite": "^4.3.1",
         "axios": "^1.18.0",
         "concurrently": "^10.0.3",
-        "intelephense": "^1.18.4",
+        "intelephense": "^1.18.5",
         "laravel-vite-plugin": "^3.1.0",
         "playwright": "1.61.0",
         "prettier": "^3.8.4",
