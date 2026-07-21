@@ -24,8 +24,8 @@ importers:
         specifier: ^1.18.5
         version: 1.18.5
       laravel-vite-plugin:
-        specifier: ^3.1.0
-        version: 3.1.0(vite@8.1.4(esbuild@0.27.4)(jiti@2.7.0))
+        specifier: ^3.1.3
+        version: 3.1.3(vite@8.1.4(esbuild@0.27.4)(jiti@2.7.0))
       playwright:
         specifier: 1.61.1
         version: 1.61.1
@@ -911,12 +911,12 @@ packages:
   jsonfile@6.2.1:
     resolution: {integrity: sha512-zwOTdL3rFQ/lRdBnntKVOX6k5cKJwEc1HdilT71BWEu7J41gXIB2MRp+vxduPSwZJPWBxEzv4yH1wYLJGUHX4Q==}
 
-  laravel-vite-plugin@3.1.0:
-    resolution: {integrity: sha512-Fzocl+X4eQ9jOi0RwdphYRGkUbPJ3ky1pTAST5Ot18cS2gw6d2vldK2eCrlKDVjtibCjCx5qptYDlA0373n7qg==}
+  laravel-vite-plugin@3.1.3:
+    resolution: {integrity: sha512-cI5Anw4QHY+UzvZczFaj+j8NhwT2FtyEN8aqS/hOdt6DpEFBsn6x3GENxALem3cc+TsGvd9MacneimEvShvKMA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
-      fontaine: ^0.5.0
+      fontaine: ^0.8.0
       vite: ^8.0.0
     peerDependenciesMeta:
       fontaine:
@@ -1253,10 +1253,6 @@ packages:
   tapable@2.3.3:
     resolution: {integrity: sha512-uxc/zpqFg6x7C8vOE7lh6Lbda8eEL9zmVm/PLeTPBRhh1xCgdWaQ+J1CUieGpIfm2HdtsUpRv+HshiasBMcc6A==}
     engines: {node: '>=6'}
-
-  tinyglobby@0.2.16:
-    resolution: {integrity: sha512-pn99VhoACYR8nFHhxqix+uvsbXineAasWm5ojXoN8xEwK5Kd3/TrhNn1wByuD52UxWRLy8pu+kRMniEi6Eq9Zg==}
-    engines: {node: '>=12.0.0'}
 
   tinyglobby@0.2.17:
     resolution: {integrity: sha512-wXR/dYpcqKmfWpEdZjiKJOwCNFndD0DMnrW/cYjVGttEkBfVgcLFHoNrlj47mjOVic9yyNu65alsgF4NQyTa2g==}
@@ -2203,10 +2199,10 @@ snapshots:
     optionalDependencies:
       graceful-fs: 4.2.11
 
-  laravel-vite-plugin@3.1.0(vite@8.1.4(esbuild@0.27.4)(jiti@2.7.0)):
+  laravel-vite-plugin@3.1.3(vite@8.1.4(esbuild@0.27.4)(jiti@2.7.0)):
     dependencies:
       picocolors: 1.1.1
-      tinyglobby: 0.2.16
+      tinyglobby: 0.2.17
       vite: 8.1.4(esbuild@0.27.4)(jiti@2.7.0)
       vite-plugin-full-reload: 1.2.0
 
@@ -2464,11 +2460,6 @@ snapshots:
   tailwindcss@4.3.2: {}
 
   tapable@2.3.3: {}
-
-  tinyglobby@0.2.16:
-    dependencies:
-      fdir: 6.5.0(picomatch@4.0.5)
-      picomatch: 4.0.5
 
   tinyglobby@0.2.17:
     dependencies:
