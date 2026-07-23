@@ -34,10 +34,10 @@ importers:
         version: 3.9.5
       prettier-plugin-blade:
         specifier: ^3.2.2
-        version: 3.2.2(prettier-plugin-tailwindcss@0.8.0(prettier@3.9.5))(prettier@3.9.5)
+        version: 3.2.2(prettier-plugin-tailwindcss@0.8.1(prettier@3.9.5))(prettier@3.9.5)
       prettier-plugin-tailwindcss:
-        specifier: ^0.8.0
-        version: 0.8.0(prettier@3.9.5)
+        specifier: ^0.8.1
+        version: 0.8.1(prettier@3.9.5)
       tailwindcss:
         specifier: ^4.3.2
         version: 4.3.2
@@ -1096,8 +1096,8 @@ packages:
       prettier-plugin-tailwindcss:
         optional: true
 
-  prettier-plugin-tailwindcss@0.8.0:
-    resolution: {integrity: sha512-V8ITGH87yuBDF6JpEZTOVlUz/saAwqb8f3HRgUj8Lh+tGCcrmorhsLpYqzygwFwK0PE2Ib6Mv3M7T/uE2tZV1g==}
+  prettier-plugin-tailwindcss@0.8.1:
+    resolution: {integrity: sha512-iaFMYqDsE4ffdDkn5qup0j5f2aCEBFZrdrZnvu9QKTlWx/iGPeQ4HHu7b7fCPMxeo9nwQBiOAh2nSypdFYWJkw==}
     engines: {node: '>=20.19'}
     peerDependencies:
       '@ianvs/prettier-plugin-sort-imports': '*'
@@ -2335,16 +2335,16 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  prettier-plugin-blade@3.2.2(prettier-plugin-tailwindcss@0.8.0(prettier@3.9.5))(prettier@3.9.5):
+  prettier-plugin-blade@3.2.2(prettier-plugin-tailwindcss@0.8.1(prettier@3.9.5))(prettier@3.9.5):
     dependencies:
       '@prettier/html-tags': 2.2.0
       '@prettier/parse-srcset': 3.1.0
       html-element-attributes: 3.5.0
       prettier: 3.9.5
     optionalDependencies:
-      prettier-plugin-tailwindcss: 0.8.0(prettier@3.9.5)
+      prettier-plugin-tailwindcss: 0.8.1(prettier@3.9.5)
 
-  prettier-plugin-tailwindcss@0.8.0(prettier@3.9.5):
+  prettier-plugin-tailwindcss@0.8.1(prettier@3.9.5):
     dependencies:
       prettier: 3.9.5
 
