@@ -24,8 +24,8 @@ importers:
         specifier: ^1.18.5
         version: 1.18.5
       laravel-vite-plugin:
-        specifier: ^3.1.3
-        version: 3.1.3(vite@8.2.1(esbuild@0.27.4)(jiti@2.7.0))
+        specifier: ^3.2.0
+        version: 3.2.0(vite@8.2.1(esbuild@0.27.4)(jiti@2.7.0))
       playwright:
         specifier: 1.62.1
         version: 1.62.1
@@ -898,8 +898,8 @@ packages:
   jsonfile@6.2.1:
     resolution: {integrity: sha512-zwOTdL3rFQ/lRdBnntKVOX6k5cKJwEc1HdilT71BWEu7J41gXIB2MRp+vxduPSwZJPWBxEzv4yH1wYLJGUHX4Q==}
 
-  laravel-vite-plugin@3.1.3:
-    resolution: {integrity: sha512-cI5Anw4QHY+UzvZczFaj+j8NhwT2FtyEN8aqS/hOdt6DpEFBsn6x3GENxALem3cc+TsGvd9MacneimEvShvKMA==}
+  laravel-vite-plugin@3.2.0:
+    resolution: {integrity: sha512-xSxY9Gzeb/eancd8WeK09piAFP+a6i5QIBqNCKNv9L0Eq6wziwzSem7F1GvMSrtjMh5F/QVKFxn8t9naGOA66A==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -2229,7 +2229,7 @@ snapshots:
     optionalDependencies:
       graceful-fs: 4.2.11
 
-  laravel-vite-plugin@3.1.3(vite@8.2.1(esbuild@0.27.4)(jiti@2.7.0)):
+  laravel-vite-plugin@3.2.0(vite@8.2.1(esbuild@0.27.4)(jiti@2.7.0)):
     dependencies:
       picocolors: 1.1.1
       tinyglobby: 0.2.17
