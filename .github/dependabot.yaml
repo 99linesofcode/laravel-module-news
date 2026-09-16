@@ -11,6 +11,9 @@ updates:
       prefix: fix
       prefix-development: chore
       include: scope
+    ignore:
+      - update-types:
+          - version-update:semver-patch
 
   - package-ecosystem: npm
     directory: /
@@ -23,6 +26,9 @@ updates:
       prefix: fix
       prefix-development: chore
       include: scope
+    ignore:
+      - update-types:
+          - version-update:semver-patch
     cooldown:
       default-days: 7
     groups:
@@ -45,6 +51,9 @@ updates:
       prefix: fix
       prefix-development: chore
       include: scope
+    ignore:
+      - update-types:
+          - version-update:semver-patch
     cooldown:
       default-days: 7
     groups:
