@@ -1,3 +1,12 @@
+## [0.2.1](https://github.com/99linesofcode/laravel-module-news/compare/v0.2.0...v0.2.1) (2026-09-17)
+
+
+### Bug Fixes
+
+* **deps:** bump devshell from `7b1fc23` to `c369d7f` ([#77](https://github.com/99linesofcode/laravel-module-news/issues/77)) ([1f364f3](https://github.com/99linesofcode/laravel-module-news/commit/1f364f339f0ea53247673f684389043b4c03275e))
+
+
+
 # [0.2.0](https://github.com/99linesofcode/laravel-module-news/compare/v0.1.4...v0.2.0) (2026-09-06)
 
 
@@ -51,16 +60,6 @@
 ### Bug Fixes
 
 * **deps:** bump picomatch in the npm_and_yarn group across 1 directory ([067101d](https://github.com/99linesofcode/laravel-module-news/commit/067101da8cc5a38a45caa51f443107a569e7a7bc))
-
-
-
-## [0.1.1](https://github.com/99linesofcode/laravel-module-news/compare/v0.1.0...v0.1.1) (2026-03-25)
-
-
-### Bug Fixes
-
-* **dependabot:** time should be of type string instead of int ([9da0c60](https://github.com/99linesofcode/laravel-module-news/commit/9da0c60bfa9fcadc443eb3f0885dc5f10b97b223))
-* **deps:** bump devshell from `0195dc0` to `e949d95` ([44c4bd5](https://github.com/99linesofcode/laravel-module-news/commit/44c4bd59f1a9fcace2a486621183415f5a51e0a8))
 
 
 
