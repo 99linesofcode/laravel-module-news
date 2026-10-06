@@ -14,7 +14,7 @@
     "repositories": [
         {
             "type": "path",
-            "url": "../laravel-module-support",
+            "url": "../laravel-module-*",
             "options": {
                 "symlink": true
             }
@@ -22,13 +22,6 @@
         {
             "type": "vcs",
             "url": "https://github.com/99linesofcode/laravel-module-support.git"
-        },
-        {
-            "type": "path",
-            "url": "../laravel-module-user",
-            "options": {
-                "symlink": true
-            }
         },
         {
             "type": "vcs",
