@@ -2,9 +2,9 @@
 
 namespace Lines\News\App\Filament\Pages;
 
-use Lines\News\App\Filament\Resources\PostResource;
 use Filament\Actions\CreateAction;
 use Filament\Resources\Pages\ListRecords;
+use Lines\News\App\Filament\Resources\PostResource;
 
 class ListPosts extends ListRecords
 {

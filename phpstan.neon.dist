@@ -10,5 +10,4 @@ parameters:
         - _ide_helper_models.php
     paths:
         - src
-        - config
     tmpDir: build/phpstan
