@@ -13,4 +13,4 @@ permissions:
 
 jobs:
   analyse:
-    uses: 99linesofcode/.github/.github/workflows/analyse.yaml@main
+    uses: 99linesofcode/.github-php/.github/workflows/analyse.yaml@main
