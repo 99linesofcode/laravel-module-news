@@ -1,3 +1,19 @@
+# [0.3.0](https://github.com/99linesofcode/laravel-module-news/compare/v0.2.2...v0.3.0) (2026-10-06)
+
+
+### Bug Fixes
+
+* **deps:** bump devshell from `21db3dd` to `4075c8d` ([#81](https://github.com/99linesofcode/laravel-module-news/issues/81)) ([958837b](https://github.com/99linesofcode/laravel-module-news/commit/958837bf3484ff24c0ef97b02325857231c77461))
+* **deps:** fall back to VCS resolution for the sibling modules ([a813edc](https://github.com/99linesofcode/laravel-module-news/commit/a813edc78c72074e0b544bc11c3af15989160bcf))
+* **deps:** glob the path repository so CI tolerates absent siblings ([7c65814](https://github.com/99linesofcode/laravel-module-news/commit/7c6581470c0c3f14afbdeb32df15b6401ae812e6))
+
+
+### Features
+
+* **lint:** enforce the layer contract with deptrac ([7253d09](https://github.com/99linesofcode/laravel-module-news/commit/7253d09861a9e3d2ba8236ae9d98d0685cbbae34))
+
+
+
 ## [0.2.2](https://github.com/99linesofcode/laravel-module-news/compare/v0.2.1...v0.2.2) (2026-09-21)
 
 
@@ -51,15 +67,6 @@
 ### Bug Fixes
 
 * **deps:** bump brace-expansion ([#10](https://github.com/99linesofcode/laravel-module-news/issues/10)) ([0470746](https://github.com/99linesofcode/laravel-module-news/commit/047074622c420bbffbbf2e45f6d35d8251fe59c8))
-
-
-
-## [0.1.3](https://github.com/99linesofcode/laravel-module-news/compare/v0.1.2...v0.1.3) (2026-03-26)
-
-
-### Bug Fixes
-
-* **deps:** bump devshell from `e949d95` to `7b1fc23` ([16078b4](https://github.com/99linesofcode/laravel-module-news/commit/16078b4987494e3c078d44d9979c1e27c7d32cc6))
 
 
 
