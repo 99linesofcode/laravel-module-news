@@ -43,3 +43,6 @@ phpunit.xml
 
 # Workbench
 /workbench/storage
+
+# deptrac run cache
+.deptrac.cache

@@ -1,0 +1,16 @@
+name: analyse
+
+on:
+  push:
+    branches-ignore:
+      - main
+  pull_request:
+    branches-ignore:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  analyse:
+    uses: 99linesofcode/.github-php/.github/workflows/analyse.yaml@main
