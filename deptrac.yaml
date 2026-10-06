@@ -1,0 +1,32 @@
+# The boundary gate: the layer contract as a machine check. Layers match
+# by namespace, not folder, so the rules hold wherever the code lives. The
+# composition root — the *ServiceProvider — sits outside the layers on
+# purpose: it is the one place wiring happens, and deptrac analyses only
+# classified classes. Extend the ruleset when a real cross-layer edge
+# appears; a gate without an owner erodes one change at a time.
+deptrac:
+  paths:
+    - .
+  exclude_files:
+    - '#(^|/)vendor/.*#'
+    - '#(^|/)tests/.*#'
+    - '#(^|/)workbench/.*#'
+  layers:
+    - name: App
+      collectors:
+        - type: classNameRegex
+          value: '#^.*\\App\\.*#'
+    - name: Domain
+      collectors:
+        - type: classNameRegex
+          value: '#^.*\\Domain\\.*#'
+    - name: Infrastructure
+      collectors:
+        - type: classNameRegex
+          value: '#^.*\\Infrastructure\\.*#'
+  ruleset:
+    App:
+      - Domain
+    Domain: []
+    Infrastructure:
+      - Domain

@@ -37,6 +37,7 @@
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^3.5",
+        "deptrac/deptrac": "^4.7",
         "fakerphp/faker": "^1.23",
         "larastan/larastan": "^3.0",
         "laravel/pint": "^1.18",
@@ -90,7 +91,8 @@
         ],
         "lint": [
             "@php vendor/bin/pint --test -v --ansi",
-            "@php vendor/bin/phpstan analyse --verbose --memory-limit=2G --ansi"
+            "@php vendor/bin/phpstan analyse --verbose --memory-limit=2G --ansi",
+            "@php vendor/bin/deptrac analyse --no-progress"
         ],
         "format": [
             "@php vendor/bin/pint --ansi",
