@@ -782,16 +782,16 @@
         },
         {
             "name": "composer/class-map-generator",
-            "version": "1.8.0",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/class-map-generator.git",
-                "reference": "c0efbeb2f3fd7e23c7f180a59765c0b48a31fbc4"
+                "reference": "5fa48e0e1992ea8a786df3ceca80625c9a643b75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/class-map-generator/zipball/c0efbeb2f3fd7e23c7f180a59765c0b48a31fbc4",
-                "reference": "c0efbeb2f3fd7e23c7f180a59765c0b48a31fbc4",
+                "url": "https://api.github.com/repos/composer/class-map-generator/zipball/5fa48e0e1992ea8a786df3ceca80625c9a643b75",
+                "reference": "5fa48e0e1992ea8a786df3ceca80625c9a643b75",
                 "shasum": ""
             },
             "require": {
@@ -835,7 +835,7 @@
             ],
             "support": {
                 "issues": "https://github.com/composer/class-map-generator/issues",
-                "source": "https://github.com/composer/class-map-generator/tree/1.8.0"
+                "source": "https://github.com/composer/class-map-generator/tree/1.9.0"
             },
             "funding": [
                 {
@@ -847,7 +847,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-09-25T15:24:19+00:00"
+            "time": "2026-11-03T10:10:19+00:00"
         },
         {
             "name": "composer/pcre",
@@ -2671,16 +2671,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v12.70.2",
+            "version": "v12.71.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "4dc928b47c05a2a96ba51c39d2bd7749b5ea332e"
+                "reference": "64dc24f5d965add4d402b4b8b64f59b561112af5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/4dc928b47c05a2a96ba51c39d2bd7749b5ea332e",
-                "reference": "4dc928b47c05a2a96ba51c39d2bd7749b5ea332e",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/64dc24f5d965add4d402b4b8b64f59b561112af5",
+                "reference": "64dc24f5d965add4d402b4b8b64f59b561112af5",
                 "shasum": ""
             },
             "require": {
@@ -2889,7 +2889,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2026-10-27T14:07:51+00:00"
+            "time": "2026-11-03T15:08:25+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -10316,16 +10316,16 @@
         },
         {
             "name": "barryvdh/laravel-ide-helper",
-            "version": "v3.7.0",
+            "version": "v3.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-ide-helper.git",
-                "reference": "ad7e37676f1ff985d55ef1b6b96a0c0a40f2609a"
+                "reference": "f9521af2a0ed5ff1d70386cac3fae547a96be947"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-ide-helper/zipball/ad7e37676f1ff985d55ef1b6b96a0c0a40f2609a",
-                "reference": "ad7e37676f1ff985d55ef1b6b96a0c0a40f2609a",
+                "url": "https://api.github.com/repos/barryvdh/laravel-ide-helper/zipball/f9521af2a0ed5ff1d70386cac3fae547a96be947",
+                "reference": "f9521af2a0ed5ff1d70386cac3fae547a96be947",
                 "shasum": ""
             },
             "require": {
@@ -10362,7 +10362,7 @@
                     ]
                 },
                 "branch-alias": {
-                    "dev-master": "3.6-dev"
+                    "dev-master": "3.7-dev"
                 }
             },
             "autoload": {
@@ -10395,7 +10395,7 @@
             ],
             "support": {
                 "issues": "https://github.com/barryvdh/laravel-ide-helper/issues",
-                "source": "https://github.com/barryvdh/laravel-ide-helper/tree/v3.7.0"
+                "source": "https://github.com/barryvdh/laravel-ide-helper/tree/v3.8.0"
             },
             "funding": [
                 {
@@ -10407,7 +10407,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-03-17T14:12:51+00:00"
+            "time": "2026-09-15T12:58:37+00:00"
         },
         {
             "name": "barryvdh/reflection-docblock",
