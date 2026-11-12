@@ -8,11 +8,10 @@ use Illuminate\Database\Eloquent\Attributes\UseFactory;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Lines\Auth\Domain\Models\User;
 use Lines\News\Database\Factories\PostFactory;
 use Lines\News\Domain\Enums\PostStatus;
+use Lines\Support\Core\SharedKernel\ValueObjects\AsUserId;
 
 /**
  * @mixin IdeHelperPost
@@ -43,17 +42,9 @@ class Post extends Model
     protected function casts(): array
     {
         return [
-            'author_id' => 'int',
+            'author_id' => AsUserId::class,
             'published_at' => 'datetime',
             'status' => PostStatus::class,
         ];
-    }
-
-    /**
-     * Get the author of the post.
-     */
-    public function author(): BelongsTo
-    {
-        return $this->belongsTo(User::class, 'author_id');
     }
 }

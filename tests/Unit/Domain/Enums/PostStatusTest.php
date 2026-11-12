@@ -3,8 +3,9 @@
 declare(strict_types=1);
 
 use Lines\News\Domain\Enums\PostStatus;
+use Lines\News\Tests\TestCase;
 
-uses(\Lines\News\Tests\TestCase::class);
+uses(TestCase::class);
 
 describe('PostStatus', function () {
     it('returns early when transitioning to the same status', function () {

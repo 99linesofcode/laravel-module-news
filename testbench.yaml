@@ -39,7 +39,7 @@ workbench:
     factories: true
     views: true
     web: true
-  install: true
+  install: false
   sync:
     - from: storage
       to: workbench/storage

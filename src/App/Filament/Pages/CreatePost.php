@@ -21,7 +21,7 @@ class CreatePost extends CreateRecord
     {
         return app(CreatePostAction::class)(PostData::fromArray([
             ...$data,
-            'author_id' => auth()->user()->id,
+            'author_id' => auth()->id(),
         ]));
     }
 }

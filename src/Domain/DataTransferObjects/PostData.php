@@ -6,6 +6,7 @@ namespace Lines\News\Domain\DataTransferObjects;
 
 use Carbon\CarbonImmutable;
 use Lines\News\Domain\Enums\PostStatus;
+use Lines\Support\Core\SharedKernel\ValueObjects\UserId;
 use Lines\Support\Domain\DataTransferObjects\DataTransferObject;
 
 final readonly class PostData extends DataTransferObject
@@ -13,6 +14,7 @@ final readonly class PostData extends DataTransferObject
     protected static function casts(): array
     {
         return [
+            'author_id' => fn ($v) => $v instanceof UserId ? $v : new UserId((string) $v),
             'status' => fn ($_v, $data) => self::computedStatus($data),
             'published_at' => fn ($v) => self::castCarbonOrNull($v),
             'created_at' => fn ($v) => self::castCarbonOrNull($v),
@@ -23,7 +25,7 @@ final readonly class PostData extends DataTransferObject
 
     protected function __construct(
         public ?string $id,
-        public int $author_id,
+        public UserId $author_id,
         public string $title,
         public string $body,
         public PostStatus $status,

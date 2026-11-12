@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "99linesofcode/laravel-module-support",
-            "version": "v0.3.1",
+            "version": "v0.6.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/99linesofcode/laravel-module-support.git",
-                "reference": "7209bd0fe619790c11d4c1c59fc290d21da88701"
+                "url": "git@github.com:99linesofcode/laravel-module-support.git",
+                "reference": "f0bfc884cdc42d1ed97d66f6afd022519f10ccf5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/99linesofcode/laravel-module-support/zipball/7209bd0fe619790c11d4c1c59fc290d21da88701",
-                "reference": "7209bd0fe619790c11d4c1c59fc290d21da88701",
+                "url": "https://api.github.com/repos/99linesofcode/laravel-module-support/zipball/f0bfc884cdc42d1ed97d66f6afd022519f10ccf5",
+                "reference": "f0bfc884cdc42d1ed97d66f6afd022519f10ccf5",
                 "shasum": ""
             },
             "require": {
@@ -130,27 +130,24 @@
             ],
             "description": "Cross cutting concerns and supporting code for Laravel modules",
             "homepage": "https://github.com/99linesofcode/laravel-module-support",
-            "support": {
-                "source": "https://github.com/99linesofcode/laravel-module-support/tree/v0.3.1",
-                "issues": "https://github.com/99linesofcode/laravel-module-support/issues"
-            },
-            "time": "2026-10-06T21:53:49+00:00"
+            "time": "2026-11-12T16:47:32+00:00"
         },
         {
             "name": "99linesofcode/laravel-module-user",
-            "version": "v0.4.1",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/99linesofcode/laravel-module-user.git",
-                "reference": "fb660834f777a07aefb9e21df311033c052ad7c9"
+                "url": "git@github.com:99linesofcode/laravel-module-user.git",
+                "reference": "7873567e3185451fc9fc4710f191cf7bf4da5d70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/99linesofcode/laravel-module-user/zipball/fb660834f777a07aefb9e21df311033c052ad7c9",
-                "reference": "fb660834f777a07aefb9e21df311033c052ad7c9",
+                "url": "https://api.github.com/repos/99linesofcode/laravel-module-user/zipball/7873567e3185451fc9fc4710f191cf7bf4da5d70",
+                "reference": "7873567e3185451fc9fc4710f191cf7bf4da5d70",
                 "shasum": ""
             },
             "require": {
+                "99linesofcode/laravel-module-support": "^0.6.0",
                 "dutchcodingcompany/filament-socialite": "^3.2",
                 "filament/filament": "^5.0",
                 "illuminate/contracts": "^12.0",
@@ -263,11 +260,7 @@
             ],
             "description": "User Management and Authentication module for Laravel and Filament PHP.",
             "homepage": "https://github.com/99linesofcode/laravel-module-user",
-            "support": {
-                "source": "https://github.com/99linesofcode/laravel-module-user/tree/v0.4.1",
-                "issues": "https://github.com/99linesofcode/laravel-module-user/issues"
-            },
-            "time": "2026-10-06T21:54:30+00:00"
+            "time": "2026-11-12T16:39:17+00:00"
         },
         {
             "name": "anourvalar/eloquent-serialize",
