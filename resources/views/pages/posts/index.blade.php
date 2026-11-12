@@ -18,7 +18,7 @@
 			</h3>
 			<!-- TODO: except instead of body -->
 			<p>{{ $post->body }}</p>
-			<p>{{ $post->author->name }}</p>
+			<p>{{ $authors[(string) $post->author_id]?->name }}</p>
 		</div>
 	</article>
 	@endforeach

@@ -2,18 +2,31 @@
 
 declare(strict_types=1);
 
-uses(\Lines\News\Tests\TestCase::class);
-
 use Carbon\CarbonImmutable;
 use Lines\News\Domain\DataTransferObjects\PostData;
 use Lines\News\Domain\Enums\PostStatus;
+use Lines\News\Tests\TestCase;
+use Lines\Support\Core\SharedKernel\ValueObjects\UserId;
+
+uses(TestCase::class);
 
 describe('PostData', function () {
     describe('fromArray', function () {
+        it('holds the author as a UserId', function () {
+            $data = PostData::fromArray([
+                'author_id' => '9b2f6d1e-3c4a-4f5b-8e7d-1a2b3c4d5e6f',
+                'title' => fake()->words(asText: true),
+                'body' => fake()->paragraphs(asText: true),
+            ]);
+
+            expect($data->author_id)->toBeInstanceOf(UserId::class)
+                ->and((string) $data->author_id)->toBe('9b2f6d1e-3c4a-4f5b-8e7d-1a2b3c4d5e6f');
+        });
+
         describe('status', function () {
             it('is computed from the published_at property', function () {
                 $draft = PostData::fromArray([
-                    'author_id' => 1,
+                    'author_id' => '9b2f6d1e-3c4a-4f5b-8e7d-1a2b3c4d5e6f',
                     'title' => fake()->words(asText: true),
                     'body' => fake()->paragraphs(asText: true),
                 ]);
@@ -21,7 +34,7 @@ describe('PostData', function () {
                 expect($draft)->toHaveProperty('status', PostStatus::Draft);
 
                 $scheduled = PostData::fromArray([
-                    'author_id' => 1,
+                    'author_id' => '9b2f6d1e-3c4a-4f5b-8e7d-1a2b3c4d5e6f',
                     'title' => fake()->words(asText: true),
                     'body' => fake()->paragraphs(asText: true),
                     'published_at' => now()->addWeek()->toDateString(),
@@ -30,7 +43,7 @@ describe('PostData', function () {
                 expect($scheduled)->toHaveProperty('status', PostStatus::Scheduled);
 
                 $published = PostData::fromArray([
-                    'author_id' => 1,
+                    'author_id' => '9b2f6d1e-3c4a-4f5b-8e7d-1a2b3c4d5e6f',
                     'title' => fake()->words(asText: true),
                     'body' => fake()->paragraphs(asText: true),
                     'published_at' => now()->subWeek()->toDateString(),
@@ -43,7 +56,7 @@ describe('PostData', function () {
         describe('published_at', function () {
             it('casts to CarbonImmutable', function () {
                 $dto = PostData::fromArray([
-                    'author_id' => 1,
+                    'author_id' => '9b2f6d1e-3c4a-4f5b-8e7d-1a2b3c4d5e6f',
                     'title' => fake()->words(asText: true),
                     'body' => fake()->paragraphs(asText: true),
                     'published_at' => '2026-01-01 00:00:00',
@@ -57,7 +70,7 @@ describe('PostData', function () {
 
             it('is nullable', function () {
                 $dto = PostData::fromArray([
-                    'author_id' => 1,
+                    'author_id' => '9b2f6d1e-3c4a-4f5b-8e7d-1a2b3c4d5e6f',
                     'title' => fake()->words(asText: true),
                     'body' => fake()->paragraphs(asText: true),
                 ]);
@@ -69,7 +82,7 @@ describe('PostData', function () {
         describe('created_at', function () {
             it('casts to CarbonImmutable', function () {
                 $dto = PostData::fromArray([
-                    'author_id' => 1,
+                    'author_id' => '9b2f6d1e-3c4a-4f5b-8e7d-1a2b3c4d5e6f',
                     'title' => fake()->words(asText: true),
                     'body' => fake()->paragraphs(asText: true),
                     'created_at' => '2026-01-01 00:00:00',
@@ -83,7 +96,7 @@ describe('PostData', function () {
 
             it('is nullable', function () {
                 $dto = PostData::fromArray([
-                    'author_id' => 1,
+                    'author_id' => '9b2f6d1e-3c4a-4f5b-8e7d-1a2b3c4d5e6f',
                     'title' => fake()->words(asText: true),
                     'body' => fake()->paragraphs(asText: true),
                 ]);
@@ -95,7 +108,7 @@ describe('PostData', function () {
         describe('updated_at', function () {
             it('casts to CarbonImmutable', function () {
                 $dto = PostData::fromArray([
-                    'author_id' => 1,
+                    'author_id' => '9b2f6d1e-3c4a-4f5b-8e7d-1a2b3c4d5e6f',
                     'title' => fake()->words(asText: true),
                     'body' => fake()->paragraphs(asText: true),
                     'updated_at' => '2026-01-01 00:00:00',
@@ -109,7 +122,7 @@ describe('PostData', function () {
 
             it('is nullable', function () {
                 $dto = PostData::fromArray([
-                    'author_id' => 1,
+                    'author_id' => '9b2f6d1e-3c4a-4f5b-8e7d-1a2b3c4d5e6f',
                     'title' => fake()->words(asText: true),
                     'body' => fake()->paragraphs(asText: true),
                 ]);
@@ -121,7 +134,7 @@ describe('PostData', function () {
         describe('deleted_at', function () {
             it('casts to CarbonImmutable', function () {
                 $dto = PostData::fromArray([
-                    'author_id' => 1,
+                    'author_id' => '9b2f6d1e-3c4a-4f5b-8e7d-1a2b3c4d5e6f',
                     'title' => fake()->words(asText: true),
                     'body' => fake()->paragraphs(asText: true),
                     'deleted_at' => '2026-01-01 00:00:00',
@@ -135,7 +148,7 @@ describe('PostData', function () {
 
             it('is nullable', function () {
                 $dto = PostData::fromArray([
-                    'author_id' => 1,
+                    'author_id' => '9b2f6d1e-3c4a-4f5b-8e7d-1a2b3c4d5e6f',
                     'title' => fake()->words(asText: true),
                     'body' => fake()->paragraphs(asText: true),
                 ]);

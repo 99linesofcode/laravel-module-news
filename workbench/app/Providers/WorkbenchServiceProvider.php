@@ -3,6 +3,7 @@
 namespace Workbench\App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Lines\Auth\Infrastructure\Models\User;
 
 use function Orchestra\Testbench\workbench_path;
 
@@ -13,6 +14,9 @@ class WorkbenchServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
+        // laravel-module-user owns the auth model, as an app's config/auth.php names it.
+        config()->set('auth.providers.users.model', User::class);
+
         // Livewire is configured to resolve it's layout and components from the
         // default layouts and pages directory but it points to the incorrect
         // directory when developing with workbench. Let us override that.

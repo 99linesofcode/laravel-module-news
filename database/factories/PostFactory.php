@@ -6,18 +6,19 @@ namespace Lines\News\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
+use Lines\Auth\Database\Factories\UserFactory;
 use Lines\News\Domain\Enums\PostStatus;
 use Lines\News\Domain\Models\Post;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\Lines\News\Domain\Models\Post>
+ * @extends Factory<Post>
  */
 class PostFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
-     * @var class-string<\Illuminate\Database\Eloquent\Model>
+     * @var class-string<Model>
      */
     protected $model = Post::class;
 
@@ -29,7 +30,7 @@ class PostFactory extends Factory
     public function definition(): array
     {
         return [
-            'author_id' => 1,
+            'author_id' => UserFactory::new(),
             'title' => fake()->sentence(),
             'body' => fake()->sentences(asText: true),
             'status' => PostStatus::Draft->value,
@@ -44,6 +45,7 @@ class PostFactory extends Factory
     {
         return $this->state(fn () => [
             'id' => $original->id,
+            'author_id' => $original->author_id,
         ]);
     }
 

@@ -21,7 +21,8 @@ describe('PostResource', function () {
     describe('creating a post', function () {
         describe('as an admin', function () {
             beforeEach(function () {
-                actingAs(UserFactory::new()->create());
+                $this->author = UserFactory::new()->create();
+                actingAs($this->author);
             });
 
             it('renders the form', function () {
@@ -30,8 +31,8 @@ describe('PostResource', function () {
                     ->assertFormExists();
             });
 
-            it('creates a Post', function () {
-                $post = Post::factory()->make()->except('status');
+            it('creates a Post by the acting user', function () {
+                $post = Post::factory()->make()->only(['title', 'body', 'published_at']);
 
                 livewire(CreatePost::class)
                     ->fillForm($post)
@@ -39,7 +40,7 @@ describe('PostResource', function () {
                     ->assertHasNoFormErrors()
                     ->assertRedirect();
 
-                assertDatabaseHas(Post::class, $post);
+                assertDatabaseHas(Post::class, [...$post, 'author_id' => $this->author->id]);
             });
         });
     });
