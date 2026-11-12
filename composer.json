@@ -16,7 +16,11 @@
             "type": "path",
             "url": "../laravel-module-*",
             "options": {
-                "symlink": true
+                "symlink": true,
+                "versions": {
+                    "99linesofcode/laravel-module-support": "0.6.x-dev",
+                    "99linesofcode/laravel-module-user": "1.x-dev"
+                }
             }
         },
         {
