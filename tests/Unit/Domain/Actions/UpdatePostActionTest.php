@@ -2,14 +2,15 @@
 
 declare(strict_types=1);
 
-uses(\Lines\News\Tests\TestCase::class);
-
 use Lines\News\Domain\Actions\UpdatePostAction;
 use Lines\News\Domain\DataTransferObjects\PostData;
 use Lines\News\Domain\Models\Post;
+use Lines\News\Tests\TestCase;
 
 use function Pest\Laravel\assertDatabaseCount;
 use function Pest\Laravel\assertDatabaseHas;
+
+uses(TestCase::class);
 
 describe('UpdatePostAction', function () {
     it('updates an existing post', function () {
