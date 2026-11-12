@@ -6,8 +6,10 @@ parameters:
     scanDirectories:
         - stubs
     scanFiles:
-        - _ide_helper.php
         - _ide_helper_models.php
     paths:
         - src
     tmpDir: build/phpstan
+    databaseMigrationsPath:
+        - database/migrations
+        - vendor/99linesofcode/laravel-module-user/database/migrations
