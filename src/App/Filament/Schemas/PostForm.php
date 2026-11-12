@@ -69,7 +69,7 @@ class PostForm
                 $component->state(! is_null($record?->published_at));
             })
             ->afterStateUpdated(function (Set $set, bool $state, ?Post $record) {
-                $set('published_at', $state ? ($record?->published_at ?? now()) : null);
+                $set('published_at', $state ? ($record->published_at ?? now()) : null);
             })
             ->label(fn (Get $get) => self::resolveShouldPublishLabel($get('published_at')))
             ->live()
@@ -82,8 +82,8 @@ class PostForm
 
         return match (true) {
             is_null($publishedAt) => 'Publish',
-            $date->isPast() => 'Published',
             $date->isFuture() => 'Scheduled',
+            default => 'Published',
         };
     }
 
@@ -108,8 +108,8 @@ class PostForm
         $date = CarbonImmutable::parse($publishedAt);
 
         return match (true) {
-            $date->isPast() => 'Published on',
             $date->isFuture() => 'Scheduled for',
+            default => 'Published on',
         };
     }
 }
