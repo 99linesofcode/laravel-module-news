@@ -1,3 +1,30 @@
+# [1.0.0](https://github.com/99linesofcode/laravel-module-news/compare/v0.3.0...v1.0.0) (2026-11-12)
+
+
+### Bug Fixes
+
+* **deps:** bump brace-expansion from 5.0.9 to 5.0.12 ([#88](https://github.com/99linesofcode/laravel-module-news/issues/88)) ([fe52d5c](https://github.com/99linesofcode/laravel-module-news/commit/fe52d5c27a80e7d346901bbcc618c289f4053715))
+* **deps:** bump devshell from `4075c8d` to `5278d4d` ([#84](https://github.com/99linesofcode/laravel-module-news/issues/84)) ([45af3ef](https://github.com/99linesofcode/laravel-module-news/commit/45af3ef721a879469f6693076712114cce1a836c))
+* **deps:** bump follow-redirects from 1.16.0 to 1.16.1 ([#90](https://github.com/99linesofcode/laravel-module-news/issues/90)) ([1ca67d5](https://github.com/99linesofcode/laravel-module-news/commit/1ca67d58dc807e6a2df4f1e65dfb758ef9678009))
+* **deps:** bump follow-redirects from 1.16.1 to 1.16.2 ([#93](https://github.com/99linesofcode/laravel-module-news/issues/93)) ([d98c444](https://github.com/99linesofcode/laravel-module-news/commit/d98c444aaf9b7071d5d4a5463889599b70a6c818))
+* **deps:** bump ip-address from 10.2.0 to 10.7.4 ([#86](https://github.com/99linesofcode/laravel-module-news/issues/86)) ([d091e5a](https://github.com/99linesofcode/laravel-module-news/commit/d091e5aacde487bbd5b51b14fc1247a6c3013678))
+* **deps:** bump source-map-js from 1.2.1 to 1.2.2 ([#87](https://github.com/99linesofcode/laravel-module-news/issues/87)) ([7473b91](https://github.com/99linesofcode/laravel-module-news/commit/7473b917f56565dfefda06b69e52553a1542b409))
+* **deps:** bump the automated group with 2 updates ([#95](https://github.com/99linesofcode/laravel-module-news/issues/95)) ([e143dfe](https://github.com/99linesofcode/laravel-module-news/commit/e143dfec98bdcaebde706f76fdf91d95a52b60f0))
+* **deps:** bump the automated group with 8 updates ([#92](https://github.com/99linesofcode/laravel-module-news/issues/92)) ([fd677a1](https://github.com/99linesofcode/laravel-module-news/commit/fd677a1639477718e2cbf44ba4b2b5172949e00f))
+
+
+* feat!: record a post's author as a UserId ([b8100c8](https://github.com/99linesofcode/laravel-module-news/commit/b8100c848be9ba1f192ac0b17e347816a350f145))
+
+
+### BREAKING CHANGES
+
+* PostData::$author_id is a UserId rather than an int,
+and Post::author() is removed.
+
+Issue: 0052-laravel-modules-meet-the-skeleton-user-contract
+
+
+
 # [0.3.0](https://github.com/99linesofcode/laravel-module-news/compare/v0.2.2...v0.3.0) (2026-10-06)
 
 
@@ -58,15 +85,6 @@
 ### Features
 
 * **dependabot:** automatically update submodules, node and composer packages ([19eab27](https://github.com/99linesofcode/laravel-module-news/commit/19eab27375cafc2f7c15f1d4c26976da07992098))
-
-
-
-## [0.1.4](https://github.com/99linesofcode/laravel-module-news/compare/v0.1.3...v0.1.4) (2026-03-30)
-
-
-### Bug Fixes
-
-* **deps:** bump brace-expansion ([#10](https://github.com/99linesofcode/laravel-module-news/issues/10)) ([0470746](https://github.com/99linesofcode/laravel-module-news/commit/047074622c420bbffbbf2e45f6d35d8251fe59c8))
 
 
 
