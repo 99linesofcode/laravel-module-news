@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Lines\News;
 
+use Filament\Support\Assets\Asset;
 use Filament\Support\Facades\FilamentAsset;
 use Filament\Support\Facades\FilamentIcon;
 use Illuminate\Filesystem\Filesystem;

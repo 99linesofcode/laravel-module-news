@@ -12,9 +12,10 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Lines\News\Database\Factories\PostFactory;
 use Lines\News\Domain\Enums\PostStatus;
 use Lines\Support\Core\SharedKernel\ValueObjects\AsUserId;
+use Lines\Support\Core\SharedKernel\ValueObjects\UserId;
 
 /**
- * @mixin IdeHelperPost
+ * @property UserId $author_id
  */
 #[UseFactory(PostFactory::class)]
 class Post extends Model
@@ -24,7 +25,7 @@ class Post extends Model
     /**
      * The attributes that are mass assignable.
      *
-     * @var array<int, string>
+     * @var list<string>
      */
     protected $fillable = [
         'author_id',

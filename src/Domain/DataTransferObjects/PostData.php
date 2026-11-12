@@ -50,8 +50,8 @@ final readonly class PostData extends DataTransferObject
 
         return match (true) {
             is_null($date) => PostStatus::Draft,
-            $date->isPast() => PostStatus::Published,
             $date->isFuture() => PostStatus::Scheduled,
+            default => PostStatus::Published,
         };
     }
 }
